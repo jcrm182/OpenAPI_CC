@@ -16,14 +16,11 @@
     <script>
         window.onload = function() {
             window.ui = SwaggerUIBundle({
-                url: "./openapiBase.yaml", 
+                url: "./openapiBase.yaml",
                 dom_id: '#swagger-ui',
-                deepLinking: true,
                 presets: [
-                    SwaggerUIBundle.presets.apis,
-                    SwaggerUIBundle.StandalonePreset
-                ],
-                layout: "StandaloneLayout"
+                    SwaggerUIBundle.presets.apis
+                ]
             });
         };
     </script>
